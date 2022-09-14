@@ -1,0 +1,21 @@
+{
+  "name": "mern-template-server",
+  "version": "1.0.0",
+  "description": "MERN template for any project!",
+  "main": "server.js",
+  "scripts": {
+    "start": "node mern-template-server/server.js",
+    "server": "nodemon mern-template-server/server.js"
+  },
+  "author": "Andres Zapata",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
