@@ -3,3 +3,6 @@ MERN template for any project!
 
 ## Packages 📦
 - express
+- mongoose
+- dotenv
+- colors
