@@ -6,3 +6,4 @@ MERN template for any project!
 - mongoose
 - dotenv
 - colors
+- express-async-handler
