@@ -5,16 +5,17 @@ const userSchema = mongoose.Schema({
         type: String,
         required: [true, 'Please add a name']
     },
-    name: {
+    email: {
         type: String,
-        required: [true, 'Please add a name']
+        required: [true, 'Please add an email'],
+        unique: true
     },
-    name: {
+    password: {
         type: String,
-        required: [true, 'Please add a name']
-    },
-    name: {
-        type: String,
-        required: [true, 'Please add a name']
+        required: [true, 'Please add a password']
     }
+}, {
+    timestamps: true
 })
+
+module.exports = mongoose.model('Users', userSchema)
