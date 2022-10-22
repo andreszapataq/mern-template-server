@@ -1,11 +1,12 @@
 const express = require('express')
 const router = express.Router()
 const { getData, setData, updateData, deleteData } = require('../controllers/dataController')
+const { protect } = require('../middleware/authMiddleware')
 
 // Get & Create Data
-router.route('/').get(getData).post(setData)
+router.route('/').get(protect, getData).post(protect, setData)
 
 // Update & Delete Data
-router.route('/:id').delete(deleteData).put(updateData)
+router.route('/:id').delete(protect, deleteData).put(protect, updateData)
 
 module.exports = router
